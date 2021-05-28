@@ -51,11 +51,6 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <h4 style="padding-bottom:20px;">User Selected</h4>
-                                <script>
-                                    var a = {{ user_selected }};
-
-                                    console.table(a);
-                                </script>
                                 {% for user in user_selected %}
                                 <p style="color:red;">{{user}}<br></p>
                                 {% endfor %}
